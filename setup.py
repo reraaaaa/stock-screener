@@ -23,6 +23,7 @@ setup(
     version=version,
     description='Rapid API python client',
     long_description=README,
+    license='MIT',
     long_description_content_type='text/markdown',
     author='Rapid',
     author_email='reraaaaa@gmail.com',
