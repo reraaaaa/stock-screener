@@ -5,7 +5,7 @@ import requests
 from requests.exceptions import HTTPError
 import time
 from enum import Enum
-from rapid_api import __version__
+from screener import __version__
 from .common import (
     get_base_url,
     get_data_url,

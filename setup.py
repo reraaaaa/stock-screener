@@ -7,7 +7,7 @@ from setuptools import setup
 
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-with open('rapid_api/__init__.py', 'rb') as f:
+with open('screener/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
@@ -19,18 +19,18 @@ with open(os.path.join("requirements", "requirements.txt")) as reqs:
 
 
 setup(
-    name='rapid_api',
+    name='screener',
     version=version,
-    description='Rapid API python client',
+    description='Stock Screener and fundamental analysis tool',
     long_description=README,
     license='MIT',
     long_description_content_type='text/markdown',
-    author='Rapid',
+    author='D-one',
     author_email='reraaaaa@gmail.com',
     url='https://github.com/reraaaaa/rapid-api-python',
-    keywords='financial,timeseries,api,trade',
+    keywords='financial,timeseries,trade',
     packages=[
-        'rapid_api',
+        'screener',
     ],
     install_requires=REQUIREMENTS,
     setup_requires=['pytest-runner', 'flake8'],

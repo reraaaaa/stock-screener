@@ -1,1 +1,1 @@
-# rapid-api-python
+# Stock Screener and fundamental analysis tool
